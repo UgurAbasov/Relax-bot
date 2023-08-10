@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands 
 bot = commands.Bot(command_prefix = ">", intents = discord.Intents.all())
 
-@bot.command(aliases = ['пинг'])
+@bot.command(aliases = ['ping'])
 async def ping(ctx):
 	await ctx.send("pong!")
 
@@ -16,4 +16,4 @@ async def on_message_edit(before, after):
 		return
 	await before.channel.send(f"Message changed!\n{before.content} -> {after.content}")
 
-bot.run("ODgyMjEwNjUyMDQxNjc0Nzky.YS4Esg.bWrL1GGJetS5xU0egZCgHI0CQt0")
+bot.run("")
